@@ -1,0 +1,41 @@
+/*table.dataTable
+{
+    clear: both;
+
+    width: 100%;
+    margin: 0 auto;
+
+    border-spacing: 0;
+    border-collapse: separate;
+}*/
+.dataTables_wrapper{
+	width: 100%;
+	position: relative;
+}
+table.dataTable thead th
+{
+    padding: 10px 10px;
+}
+#nav{
+	border-bottom: 1px solid #000;
+	padding: 0;
+	list-style: none;
+	zoom: 1;
+	overflow: hidden;
+}
+#nav .tab{
+	color: #3174c7;
+	float: left;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+#nav .tab:hover{
+	color: black;
+	background: #E6E6E6;
+}
+#nav .active{
+	border-bottom: 5px solid #3174c7;
+}
+#nav:after{
+	clear: both;
+}
