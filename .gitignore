@@ -1,0 +1,3 @@
+*.csv
+/demo/templates_c
+/demo/cache
