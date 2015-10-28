@@ -9,11 +9,10 @@ $(function(){
 		$(tabContent).show().siblings().hide();
 	});
 	$example.DataTable({
-		dom: 'Bfrtip',
+		dom: 'lifrtBp',
 	    buttons: [
 	        'csv', 'excel', 'pdf'
 	    ]
 	});
 });
-
 

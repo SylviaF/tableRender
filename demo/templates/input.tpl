@@ -2,9 +2,10 @@
 <html>
 <head>
     <title>csv转在线表格</title>
+	<meta charset="UTF-8"/>
 </head>
 <body>
-	<form action="/demo/upload.php" method="post" enctype="multipart/form-data">
+	<form action="/upload" method="post" enctype="multipart/form-data">
 		<input type="file" name="file" />
 		<input type="submit"/>
 	</form>
@@ -25,7 +26,8 @@
 
 		<p>2. 多个表格之间用空行分割</p>
 		<p>3. 只支持window转存为cvs</p>
+		<p>4. 以上传的csv文件名区分url</p>
 	</div>
-    <script type="text/javascript" src="./common/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="./static/common/js/jquery-1.11.3.min.js"></script>
 </body>
 </html>

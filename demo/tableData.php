@@ -1,7 +1,7 @@
 <?php
 
 function getTableData(){
-	$file_name = '../upload/'.$_GET['filename'];
+	$file_name = './upload/'.$_GET['filename'];
 	$file = fopen($file_name, 'r');
 	$oneFlag = true;
 	$n = 0;
@@ -22,12 +22,20 @@ function getTableData(){
 				$tableData['title'] = str_getcsv($data, ",")[0];
 			}
 			else if ($n == 1){
+				$dataCount = substr_count($data, ',');
 				$columns = str_getcsv($data, ",");
 				foreach ($columns as $key => $col) {
 					$tableData['columns'][] = array('title'=> $col);
 				}
 			}
 			else {
+				$endEmptyCount = $dataCount  - substr_count($data, ',');
+				if ($dataCount){
+					while($endEmptyCount){
+						$data = $data.',';
+						$endEmptyCount--;
+					}
+				}
 				$tableData['data'][] = str_getcsv($data, ",");
 			}
 			$n++;
