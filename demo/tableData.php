@@ -1,7 +1,7 @@
 <?php
 
-function getTableData(){
-	$file_name = './upload/'.$_GET['filename'];
+function getTableData($filename){
+	$file_name = './upload/'.$filename;
 	$file = fopen($file_name, 'r');
 	$oneFlag = true;
 	$n = 0;
