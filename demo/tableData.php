@@ -19,8 +19,9 @@ function getTableData(){
 		else{
 			$data = preg_replace("/\,+$/", '', trim($data));
 			if ($n == 0){
-				$tableData['title'] = str_getcsv($data, ",")[0];
-			}
+				$tmp = str_getcsv($data, ",");
+                $tableData['title'] = $tmp[0];
+            }
 			else if ($n == 1){
 				$dataCount = substr_count($data, ',');
 				$columns = str_getcsv($data, ",");
