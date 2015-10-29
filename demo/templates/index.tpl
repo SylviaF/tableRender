@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mobomatker Data Platform</title>
+    <title>Mobomarket Data Platform</title>
     <meta charset="GBK" />
     <link rel="stylesheet" type="text/css" href="./static/common/css/jquery.dataTables.min.css"/>
     <link rel="stylesheet" type="text/css" href="./static/extensions/Buttons/css/buttons.dataTables.min.css"/>
