@@ -26,7 +26,7 @@ else{
 }
 $pageData = array(
 	'state' => $state,
-	'link' => "/".$newname,
+	'link' => "/".str_replace('.csv', '', $newname),
 );
 $smarty->assign($pageData);
 $smarty->display('input.tpl');
