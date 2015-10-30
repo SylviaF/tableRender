@@ -26,7 +26,7 @@ else{
 }
 $pageData = array(
 	'state' => $state,
-	'link' => "/index?filename=".$newname,
+	'link' => "/".$newname,
 );
 $smarty->assign($pageData);
 $smarty->display('input.tpl');
